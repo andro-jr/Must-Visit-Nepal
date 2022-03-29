@@ -749,7 +749,7 @@ header{
 .testi-avatar img{
 	width: 90px;
 	height: 90px;
-	float: left;
+    object-fit: cover;
 	border-radius: 100%;
 	border:6px solid #fff;
 	box-shadow: 0 9px 26px rgba(58, 87,135,0.1);
