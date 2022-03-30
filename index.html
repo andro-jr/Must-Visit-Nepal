@@ -14,6 +14,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- scroll effect  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>Must-Visit-Nepal</title>
 </head>
@@ -132,7 +134,7 @@
     </div>
 
     <section id="packages">
-        <h1 class="title_1">Our Packages</h1>
+        <h1 class="title_1" data-aos="fade-up" data-aos-once="true">Our Packages</h1>
 
         <div class="packages_container">
             <div class="packages_box">
@@ -303,7 +305,7 @@
     <!-- our services section  -->
 
     <section id="offers">
-        <h1 class="title_1">Our Offers</h1>
+        <h1 class="title_1" data-aos="fade-up" data-aos-once="true">Our Offers</h1>
 
         <div class="offercontainer">
             <div class="offerbox">
@@ -378,7 +380,7 @@
                 <h1>Let's <span class="auto_type"></span></h1>
             </div>
             <div class="btn_3">
-                <a href="">ABOUT US</a>
+                <a href="" data-aos="fade-up" data-aos-once="true">ABOUT US</a>
             </div>
 
         </div>
@@ -514,13 +516,13 @@
     </section>
 
 
-    <div class="title_2" data-aos="fade-up">
-        <h1>Let your memory be your travel bag.</h1>
+    <div class="title_2">
+        <p data-aos="fade-up" data-aos-once="true">Let your memory be your travel bag.</p>
     </div>
     <!-- blogs section  -->
 
     <section id="blogs">
-        <h1 class="title_1 blog_title">Blogs</h1>
+        <h1 class="title_1 blog_title" data-aos="fade-up" data-aos-once="true">Blogs</h1>
         <div class="blogs_container">
             <a href="">
                 <div class="blogs_box">
@@ -832,6 +834,10 @@
             initParadoxWay();
         });
 
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
 </body>
