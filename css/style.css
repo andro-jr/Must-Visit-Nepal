@@ -10,7 +10,7 @@ header{
     width: 100%;
     position: fixed;
     top: 0px;
-    z-index: 100;
+    z-index: 1000;
     
 }
 .wrapper{
@@ -266,7 +266,7 @@ header{
     min-height: 100vh;    
 }
 .title_1{
-    font-family: 'Kadwa', serif;
+    font-family: 'Playfair Display', serif;
     letter-spacing: 3px;
     font-size: 50px;
     text-transform: uppercase;
@@ -1262,5 +1262,4 @@ footer{
         height: 300px;
     }
 }
-
 
