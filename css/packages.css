@@ -49,15 +49,5 @@
     z-index: 2;
     color: white;
 }
-.title_2{
-    margin: 20px 0;
-    padding-top: 30px;
-    font-family: 'Rancho', cursive;
-    font-size: 60px;
-    text-align: center;
-    color: rgb(233, 142, 22);
-}
-.title_2 h1{
-   text-shadow: 2px 2px rgba(255, 17, 0, 0.856);
-}
+
 
