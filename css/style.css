@@ -1267,6 +1267,10 @@ footer{
     .changing_text_container h1{
         font-size: 40px;
     }
+    .title_2 p{
+        text-shadow: 1px 1px rgba(255, 17, 0, 0.856);
+        font-size: 50px;
+     }
 }
 @media  screen and (max-width:425px){
     .slide-content{
