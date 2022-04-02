@@ -1442,6 +1442,10 @@ footer {
         padding: 5px;
     }
 
+    .packages_container {
+        padding: 20px 0;
+    }
+
     .btn_1 {
         padding: 8px;
     }
@@ -1466,8 +1470,17 @@ footer {
         height: 325px;
     }
 
+    .btn_3 {
+        margin-top: 20px;
+    }
+
     .btn_3 a {
         font-size: 20px;
+    }
+
+    .btn_3 a {
+        background-color: #e95906;
+        color: white;
     }
 
     .changing_text_container h1 {
@@ -1477,6 +1490,14 @@ footer {
     .title_2 p {
         text-shadow: 1px 1px rgba(255, 17, 0, 0.856);
         font-size: 50px;
+    }
+
+    #blogs {
+        margin: 20px 0;
+    }
+
+    .continue_reading {
+        display: none;
     }
 }
 
@@ -1669,4 +1690,48 @@ footer {
 
 #about_page .title_3 h2 {
     width: 50%;
+}
+
+@media screen and (max-width:899px) {
+    .faq_container {
+        flex-direction: column;
+    }
+
+    .questions {
+        width: 95%;
+        margin: auto;
+    }
+
+    .faq_contact_us {
+        width: 100%;
+    }
+
+    .faq_contact_box {
+        padding: 80px 0;
+    }
+
+    .title_3 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .title_3 h2 {
+        font-size: 30px;
+        width: 100%;
+        padding-right: 15px;
+    }
+
+    .title_3 h2::after {
+        width: 60%;
+        right: 15px;
+    }
+
+    #about_page .title_3 h2 {
+        width: 100%;
+    }
+
+    #about_page {
+        padding: 10px 0;
+    }
+
 }

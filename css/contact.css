@@ -157,3 +157,25 @@ form textarea:valid~label {
 .row .input_group {
     width: 50%;
 }
+
+@media screen and (max-width:1024px) {
+    .contact_form {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:657px) {
+    .contact_container {}
+
+    .your_question form {
+        width: 95%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .input_group {
+        width: 100%;
+    }
+}
