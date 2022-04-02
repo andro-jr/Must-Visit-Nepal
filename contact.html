@@ -14,11 +14,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- scroll effect  -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/packages.css">
     <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
     <title>Must-Visit-Nepal</title>
 </head>
 
@@ -33,10 +34,10 @@
             <div class="nav_items">
                 <a href="index.html">HOME</a>
                 <a href="packages.html">PACKAGES</a>
-                <a href="about.html" class="nav_active">ABOUT US</a>
+                <a href="about.html">ABOUT US</a>
                 <a href="blogs.html">BLOG</a>
-                <a href="contact.html">CONTACT US</a>
-                <a href="">FAQs</a>
+                <a href="contact.html" class="nav_active">CONTACT US</a>
+                <a href="faq.html">FAQs</a>
 
                 <!-- socials for mobile menu -->
 
@@ -59,46 +60,89 @@
     <!-- back to the top button ko lagi  -->
     <section id="head"></section>
 
-    <div class="pages_banner about_banner">
-        <div class="pages_banner_container">
-            <div class="pages_banner_heading" data-aos="fade-left" data-aos-once="true">
-                <h1>About Us</h1>
+    <!-- contact section  -->
+    <section id="contact">
+        <div class="contact_container">
+            <div class="contact_details" data-aos="fade-right" data-aos-once="true">
+                <div class="contact_title">
+                    <h3>Contact Details</h3>
+                </div>
+                <div class="contact_box">
+
+                    <div class="contact_icon">
+                        <i class="fas fa-location-arrow"></i>
+                    </div>
+                    <div class="contact_data">
+                        <h5>Address</h5>
+                        <p>
+                            13-Tahachal,Kathmandu
+                        </p>
+                    </div>
+
+                </div>
+                <div class="contact_box">
+                    <div class="contact_icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact_data">
+                        <h5>Phone</h5>
+                        <p>01-435674</p>
+                        <p>9043133216</p>
+                    </div>
+                </div>
+                <div class="contact_box">
+                    <div class="contact_icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact_data">
+                        <h5>Email</h5>
+                        <p>mustvisit69@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact_box">
+                    <div class="contact_icon">
+                        <i class="fas fa-fax"></i>
+                    </div>
+                    <div class="contact_data">
+                        <h5>Fax</h5>
+                        <p>09090-3434-3433</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+            <div class="contact_form" data-aos="fade-left" data-aos-once="true">
+                <div class="contact_title">
+                    <h3>Let's Talk</h3>
+                </div>
 
+                <div class="your_question">
+                    <form action="">
+                        <div class="row">
+                            <div class="input_group">
+                                <input type="text" required id="name">
+                                <label for="name"><i class="fas fa-user"></i>Your Name</label>
+                            </div>
+                            <div class="input_group">
+                                <input type="number" required id="number">
+                                <label for="number"><i class="fas fa-phone-alt"></i>Phone no.</label>
+                            </div>
+                        </div>
+                        <div class="input_group">
+                            <input type="email" required id="email">
+                            <label for="email"><i class="fas fa-envelope"></i>Email Id</label>
+                        </div>
 
-    <!-- about section  -->
+                        <div class="input_group">
+                            <textarea id="question" rows="2" required></textarea>
+                            <label for="question"><i class="fas fa-comment"></i>Your Question</label>
+                        </div>
+                        <button id="submit" type="submit">Submit
+                            <i class="fas fa-paper-plane"></i></button>
 
-    <section id="about_page">
-        <div class="title_3" data-aos="fade-right" data-aos-once="true">
-            <h2>As a team of Travellers, We know what you want the <span>Best</span>.</h2>
-        </div>
-        <div class="about_page_container">
-            <div class="about_page_img">
-                <img src="images/about_img.jpg" alt="">
+                    </form>
+                </div>
             </div>
-            <div class="about_page_text">
-                <h3>Must Visit Nepal</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptate culpa ea aspernatur quam
-                    quaerat, consequatur deleniti similique illo voluptatum. Quasi iste possimus quas excepturi sint,
-                    reprehenderit cupiditate dolor tempora numquam nihil hic in quam facilis maxime minima laudantium.
-                    Tenetur, eveniet sunt? Id unde exercitationem minus voluptas at quos! Aliquid, impedit eaque. Cum
-                    adipisci vero nostrum praesentium, blanditiis minus obcaecati quibusdam, laudantium sed nobis vitae
-                    accusamus sint voluptatum cumque corrupti ipsa? Deleniti, sit deserunt cum aut veritatis quam quidem
-                    similique?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptate culpa ea aspernatur quam
-                    quaerat, consequatur deleniti similique illo voluptatum. Quasi iste possimus quas excepturi sint,
-                    reprehenderit cupiditate dolor tempora numquam nihil hic in quam facilis maxime minima laudantium.
-                    Tenetur, eveniet sunt? Id unde exercitationem minus voluptas at quos! Aliquid, impedit eaque. Cum
-                    adipisci vero nostrum praesentium, blanditiis minus obcaecati quibusdam, laudantium sed nobis vitae
-                    accusamus sint voluptatum cumque corrupti ipsa? Deleniti, sit deserunt cum aut veritatis quam quidem
-                    similique?</p>
-
-            </div>
-        </div>
-
     </section>
+
 
 
 

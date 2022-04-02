@@ -1,59 +1,98 @@
-.about_banner{
-    background: url('../images/about_banner_background.jpg') bottom center/cover;
+.about_banner {
+    background: url('../images/about_banner_background.jpg') center center/cover;
     background-attachment: fixed;
 }
-.about_page{
+
+.about_page {
     /* min-height: 100vh; */
 }
-.about_page_container{
+
+.about_page_container {
     width: 100%;
     margin: 40px auto;
     display: flex;
     flex-direction: column;
-    box-shadow: 1px 1px 10px gray;
+    box-shadow: 1px 1px 10px rgb(221, 221, 221);
 }
-#about_page{
+
+#about_page {
     margin: 80px;
 }
-.about_page_img{
+
+.about_page_img {
     width: 100%;
     height: 500px;
     position: relative;
 }
-.about_page_img img{
+
+.about_page_img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
     display: block;
 }
-.about_page_img::before{
+
+.about_page_img::before {
     content: '';
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0) ,rgb(255, 255, 255)100%);
+    background: linear-gradient(rgba(0, 0, 0, 0) 70%, rgb(255, 255, 255));
     z-index: 2;
 }
-.about_page_text{
+
+.about_page_text {
     width: 100%;
     padding: 20px;
 }
-.about_page_text h3{
+
+.about_page_text h3 {
     font-family: 'Playfair Display', serif;
     font-size: 45px;
     margin: 20px 0;
     color: rgb(255, 123, 0);
+    position: relative;
+    display: inline-block;
+    padding: 10px 0;
 }
-.about_page_text p{
+
+.about_page_text h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 75%;
+    height: 2px;
+    background: linear-gradient(90deg, orange, white);
+}
+
+.about_page_text p {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: rgb(66, 66, 66);
     margin: 10px 0;
 }
-.about_title{
+
+.about_title {
     background: none;
     padding: 0;
+}
+
+@media screen and (max-width:899px) {
+    .about_title p {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:657px) {
+    #about_page {
+        margin: 80px 10px;
+    }
+
+    .about_page_text h3 {
+        font-size: 35px;
+    }
 }
