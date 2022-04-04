@@ -593,48 +593,35 @@ header {
 /* about section  */
 
 #about {
-    /* background: url('../images/about_background.jpg'); */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    animation: about ease 10s infinite;
     animation: slide ease 20s infinite;
-}
-
-@keyframes about {
-    0% {
-        background-size: 100%;
-    }
-
-    50% {
-        background-size: 130%;
-    }
-
-    100% {
-        background-size: 100%;
-    }
-
 }
 
 @keyframes slide {
     0% {
         background-image: url('../images/about_background.jpg');
+        background-size: 100%;
     }
 
     25% {
         background-image: url('../images/about_background_2.jpg');
+        background-size: 115%;
     }
 
     50% {
         background-image: url('../images/about_background_3.jpg');
+        background-size: 130%;
     }
 
     75% {
         background-image: url('../images/about_background_4.jpg');
+        background-size: 115%;
     }
 
     100% {
         background-image: url('../images/about_background.jpg');
+        background-size: 100%;
     }
 }
 
