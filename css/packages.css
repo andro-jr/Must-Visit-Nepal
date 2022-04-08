@@ -384,10 +384,69 @@
 
 .costdetails_box ul li .fas {
     position: absolute;
-    top: 4px;
+    top: 6px;
     font-size: 20px;
 }
 
 .costdetails_box ul li p {
     padding-left: 30px;
+}
+
+#gallery {
+    position: relative;
+}
+
+.gallery_container {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery_box {
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+}
+
+.gallery_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: ease 0.5s;
+    cursor: pointer;
+}
+
+.gallery_box img:hover {
+    transform: scale(1.05);
+}
+
+.full_img {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.full_img img {
+    width: 90%;
+    max-width: 550px;
+}
+
+.full_img span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 }

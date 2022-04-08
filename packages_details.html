@@ -348,6 +348,38 @@
                     </div>
                 </div>
             </section>
+            <section id="gallery">
+                <div class="title_4">
+                    <h1>
+                        <i class="fas fa-image"></i>
+                        Gallery
+                    </h1>
+                </div>
+                <div class="full_img" id="full_img_box">
+                    <img src="images/phoksundo.jpg" alt="" id="full_img">
+                    <span onclick="close_full_img()">X</span>
+                </div>
+                <div class="gallery_container">
+                    <div class="gallery_box">
+                        <img src="images/phoksundo.jpg" alt="" onclick="open_full_img(this.src)">
+                    </div>
+                    <div class="gallery_box">
+                        <img src="images/phoksundo_2.jpg" alt="" onclick="open_full_img(this.src)">
+                    </div>
+                    <div class="gallery_box">
+                        <img src="images/phoksundo_3.jpg" alt="" onclick="open_full_img(this.src)">
+                    </div>
+                    <div class="gallery_box">
+                        <img src="images/phoksundo_4.jpg" alt="" onclick="open_full_img(this.src)">
+                    </div>
+                    <div class="gallery_box">
+                        <img src="images/phoksundo_5.jpg" alt="" onclick="open_full_img(this.src)">
+                    </div>
+                    <div class="gallery_box">
+                        <img src="images/phoksundo_6.jpg" alt="" onclick="open_full_img(this.src)">
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
@@ -597,6 +629,19 @@
             items.classList.remove("active");
             menuBtn.classList.remove("hide");
             cancelBtn.classList.remove("show");
+        }
+
+        // for gallery
+
+        var fullImgBox = document.getElementById("full_img_box");
+        var fullImg = document.getElementById("full_img");
+
+        function open_full_img(pic) {
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+        function close_full_img() {
+            fullImgBox.style.display = "none";
         }
 
     </script>
