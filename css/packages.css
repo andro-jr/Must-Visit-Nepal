@@ -53,3 +53,341 @@
     z-index: 2;
     color: white;
 }
+
+
+/* package deatils  */
+
+.package_details_banner {
+    background: url('../images/phoksundo_2.jpg') bottom center/cover;
+    background-attachment: fixed;
+}
+
+.package_details_banner::before {
+    opacity: .1;
+}
+
+.packages_details_heading h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+}
+
+.package_container {
+    width: 85%;
+    margin: 40px auto;
+    box-shadow: 0 0 5px gray;
+}
+
+.intro_image {
+    width: 47%;
+}
+
+.intro_image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.package_introduction {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 10px;
+    /* box-shadow: 0 0 5px gray; */
+}
+
+.intro {
+    width: 47%;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.intro h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin-bottom: 20px;
+    font-size: 30px;
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(90deg, orange, white);
+    padding: 10px;
+    color: rgb(47, 47, 47);
+}
+
+.intro h2::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.high {
+    display: flex;
+    padding: 4px 0 0 20px;
+}
+
+.fa-shoe-prints {
+    color: #e95906;
+    transform: rotate(-90deg);
+}
+
+.high p {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(39, 39, 39);
+}
+
+.facts {
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.facts_box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0px 7.5px 0px orange;
+    border: 3px solid orange;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    /* background: radial-gradient(white 0%, rgba(255, 166, 0, 0.464)); */
+    transform: translateY(0px);
+    transition: 0.3s;
+}
+
+.facts_box:hover {
+    transform: translateY(-5px);
+}
+
+.facts_box .fas {
+    font-size: 40px;
+    color: #e95906;
+}
+
+.facts_box h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: rgb(67, 67, 66);
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+.facts_box p {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.more_details {
+    min-height: 100vh;
+    padding: 20px 0;
+    position: relative;
+}
+
+.left_selector {
+    border: 2px solid red;
+    width: 150px;
+    position: sticky;
+    top: 100px;
+}
+
+.selector_box {
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.selector_box .fas {
+    color: #e95906;
+    font-size: 30px;
+}
+
+.selector_box h4 {
+    font-size: 25px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+
+
+
+
+/* timeline  */
+
+.title_4 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.title_4 .fas {
+    color: #e95906;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline ul {
+    list-style: none;
+}
+
+.timeline ul li {
+    padding: 20px;
+    /* background: linear-gradient(rgba(255, 166, 0, 0.541), white 100%); */
+    background: orange;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.timeline ul li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-content h1 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    color: black;
+    color: white;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+    .timeline:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 100%;
+        background-color: gray;
+    }
+
+    .timeline ul li {
+        width: 50%;
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    .timeline ul li:nth-child(odd) {
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+        border-radius: 20px 0px 20px 20px;
+    }
+
+    .timeline ul li:nth-child(even) {
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+        border-radius: 0px 20px 20px 20px;
+    }
+
+    .timeline ul li::before {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: gray;
+        top: 0px;
+    }
+
+    .timeline ul li:nth-child(odd)::before {
+        transform: translate(50%, -50%);
+        right: -30px;
+    }
+
+    .timeline ul li:nth-child(even)::before {
+        transform: translate(-50%, -50%);
+        left: -30px;
+    }
+}
+
+#costdetail {
+    min-height: 100vh;
+}
+
+.costdetails_container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.costdetails_box {
+    width: 49%;
+    padding: 20px;
+    /* border: 2px solid gray; */
+    margin: 20px;
+    background: #e9ad0666;
+    box-shadow: 0 0 4px gray;
+}
+
+.costdetails_box h2 {
+    text-align: center;
+    color: #e95906;
+    margin-bottom: 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.costdetails_box p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.cross {
+    color: red;
+}
+
+.tick {
+    color: green;
+    padding-right: 20px;
+}
+
+.costdetails_box ul li {
+    list-style: none;
+    position: relative;
+
+}
+
+.costdetails_box ul li .fas {
+    position: absolute;
+    top: 4px;
+    font-size: 20px;
+}
+
+.costdetails_box ul li p {
+    padding-left: 30px;
+}
