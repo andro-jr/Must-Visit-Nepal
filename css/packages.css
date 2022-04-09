@@ -65,11 +65,12 @@
 .big_container {
     display: flex;
     margin: 20px 0;
+    width: 100%;
 }
 
 .small_container {
-    box-shadow: 0px 4px 5px rgba(147, 147, 147, 0.844);
-
+    width: 100%;
+    box-shadow: 0 0 5px rgba(206, 205, 205, 0.534);
 }
 
 #overview {
@@ -87,12 +88,10 @@
     padding: 20px;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
-    box-shadow: 0 0 5px rgba(206, 205, 205, 0.534);
 }
 
 .overview_image {
     width: 48%;
-    box-shadow: 0 0 5px rgba(206, 205, 205, 0.534);
 }
 
 .overview_image img {
@@ -153,7 +152,7 @@
 
 .intro h2::after {
     content: '';
-    width: 100%;
+    width: 200px;
     height: 2px;
     position: absolute;
     bottom: 0;
@@ -177,9 +176,12 @@
     color: rgb(39, 39, 39);
 }
 
+
 .facts {
     margin: 40px 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -238,7 +240,7 @@
     align-items: center;
     justify-content: center;
     height: 70px;
-    border-bottom: 1px solid rgba(212, 212, 212, 0.641);
+    margin: 1px 0;
     background-color: #e95906;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -310,6 +312,10 @@
     padding-top: 50px;
 }
 
+.timeline_container {
+    width: 100%;
+}
+
 .timeline_container ul {
     list-style: none;
     padding: 60px 20px;
@@ -348,7 +354,7 @@
 }
 
 #costdetail {
-    /* padding-top: 100px; */
+    padding-top: 80px;
     margin: 5px 0;
 }
 
@@ -406,9 +412,11 @@
 
 #gallery {
     position: relative;
+    padding-top: 80px;
 }
 
 .gallery_container {
+    width: 100%;
     padding: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -461,4 +469,242 @@
     color: white;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
+}
+
+#location {
+    padding: 50px 0;
+    padding-bottom: 0;
+}
+
+.location_container {
+    padding: 40px;
+    padding-bottom: 0;
+}
+
+.location_container iframe {
+    width: 100%;
+}
+
+#package_faq {
+    margin: 5px 0;
+    padding: 80px 0;
+    padding-bottom: 0;
+}
+
+.package_faq_and_book_now {
+    display: flex;
+}
+
+.package_faq_container {
+    width: 48%;
+}
+
+.package_faq_container .faq_container {
+    padding: 0;
+    margin-top: 40px;
+}
+
+.package_booknow {
+    width: 48%;
+}
+
+.book {
+    width: 100%;
+    background: url('../images/book_background.jpg') center center/cover;
+    position: relative;
+    padding: 20px;
+    z-index: 1;
+    margin: 60px 0;
+
+}
+
+.book::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.book_container {
+    width: 100%;
+}
+
+.book_container p {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin: 20px 0;
+    margin-bottom: 40px;
+}
+
+.book_container form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.book_container input,
+.book_container textarea {
+    border: none;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    font-size: 18px;
+}
+
+.book_container textarea::placeholder,
+.book_container input::placeholder {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+}
+
+.book_container form button {
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.book_container form button:hover {
+    color: black;
+    background-color: white;
+}
+
+@media screen and (max-width:1200px) {
+    .overview_container {
+        flex-direction: column;
+    }
+
+    .intro_paragraph,
+    .overview_image {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .overview_image {
+        max-height: 500px;
+        margin-bottom: 40px;
+    }
+
+    .small_container {
+        width: 83.5%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .package_introduction {
+        width: 100%;
+    }
+
+    .costdetails_container {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .costdetails_box {
+        width: 100%;
+    }
+
+    .overview_container {
+        padding-bottom: 0;
+    }
+
+    .package_faq_and_book_now {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package_faq_container,
+    .package_booknow {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width:899px) {
+    .package_introduction {
+        flex-direction: column;
+    }
+
+    .intro_image,
+    .intro {
+        width: 100%;
+    }
+
+    .small_container {
+        width: 100%;
+    }
+
+    .left_selector {
+        display: none;
+    }
+
+    .timeline_container ul {
+        padding: 40px 0;
+    }
+
+
+}
+
+@media screen and (max-width:657px) {
+    .facts {
+        width: 100%;
+    }
+
+    .package_container {
+        width: 95%;
+    }
+
+    .package_introduction {
+        padding: 20px 0;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .small_container {
+        box-shadow: none;
+    }
+
+    .intro {
+        width: 90%;
+        padding: 0;
+        margin: auto;
+    }
+
+    #overview,
+    #tourplan,
+    #costdetail,
+    #gallery,
+    #package_faq {
+        padding-top: 0px;
+    }
+
+    .costdetails_container,
+    .gallery_container,
+    .location_container {
+        padding: 10px;
+    }
+
+    .package_faq_container {
+        padding: 0;
+    }
+
+    .package_faq_container,
+    .package_booknow {
+        padding: 5px;
+    }
+
+
+
 }
