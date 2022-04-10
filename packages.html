@@ -326,12 +326,34 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- Custom Javascript -->
 
-    <script src="js/script.js"></script>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            let header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 160)
+        })
+
+        const menuBtn = document.querySelector(".menu_icon span");
+        const cancelBtn = document.querySelector(".cancel_icon");
+        const items = document.querySelector(".nav_items");
+        menuBtn.onclick = () => {
+            items.classList.add("active");
+            menuBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+        }
+        cancelBtn.onclick = () => {
+            items.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            cancelBtn.classList.remove("show");
+        }
+    </script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
+    <script src="js/script.js"></script>
 
 </body>
 
