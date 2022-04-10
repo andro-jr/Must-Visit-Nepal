@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- scroll effect  -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="css/packages.css">
     <title>Must-Visit-Nepal</title>
 </head>
 
@@ -682,8 +681,7 @@
         <div class="footer_container">
             <div class="footer_box">
                 <h4>Must Visit Nepal</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla officia numquam voluptas enim,
-                    unde
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla officia numquam voluptas enim, unde
                     inventore sunt qui. Mollitia, nisi tempora.</p>
             </div>
             <div class="footer_box follow_box">
@@ -726,21 +724,20 @@
                 </div>
             </div>
             <div class="footer_box">
-                <h4>Our Partners</h4>
-                <div class="footer_partners">
-                    <div class="foot_img">
-                        <img src="images/BCN-Logos.jpg" alt="">
-                    </div>
-                    <div class="foot_img">
-                        <img src="images/tiger-encounter.png" alt="">
-                    </div>
-                    <div class="foot_img">
-                        <img src="images/ntb.png" alt="">
-                    </div>
-                    <div class="foot_img">
-                        <img src="images/doftourisoum.png" alt="">
-                    </div>
+                <h4>Featured Packages</h4>
+                <div class="footer_featured_packages">
+                    <a href="">
+                        <p>Shey Phokshundo</p>
+                    </a>
+                    <a href="">
+                        <p>Mustang</p>
+                    </a>
+                    <a href="">
+                        <p>Annapurna Base Camp</p>
+                    </a>
                 </div>
+
+
 
             </div>
         </div>
@@ -749,35 +746,13 @@
                 <img src="images/mountain foot.png" alt="">
             </div>
             <div class="copyright">
-                <p>© 2022 Tiger Encounter All Rights Reserved. No part of this site may be reproduced without our
-                    written
-                    permission.</p>
+                <p>© 2022 Must Visit Nepal All Rights Reserved.</p>
             </div>
         </div>
 
 
 
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
@@ -789,45 +764,10 @@
     <!-- Owl Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- Custom Javascript -->
+
+    <script src="js/script.js"></script>
+
     <script>
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
-                items: 1,
-                loop: true,
-                nav: true,
-                dots: true,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                smartSpeed: 1500,
-                autoplayHoverPause: true
-            });
-        });
-
-
-
-        window.addEventListener("scroll", function () {
-            let header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 160)
-        })
-
-
-
-
-        // menu on mobile
-
-        const menuBtn = document.querySelector(".menu_icon span");
-        const cancelBtn = document.querySelector(".cancel_icon");
-        const items = document.querySelector(".nav_items");
-        menuBtn.onclick = () => {
-            items.classList.add("active");
-            menuBtn.classList.add("hide");
-            cancelBtn.classList.add("show");
-        }
-        cancelBtn.onclick = () => {
-            items.classList.remove("active");
-            menuBtn.classList.remove("hide");
-            cancelBtn.classList.remove("show");
-        }
 
         // for gallery
 

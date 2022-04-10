@@ -673,21 +673,20 @@
                 </div>
             </div>
             <div class="footer_box">
-                <h4>Our Partners</h4>
-                <div class="footer_partners">
-                    <div class="foot_img">
-                        <img src="images/BCN-Logos.jpg" alt="">
-                    </div>
-                    <div class="foot_img">
-                        <img src="images/tiger-encounter.png" alt="">
-                    </div>
-                    <div class="foot_img">
-                        <img src="images/ntb.png" alt="">
-                    </div>
-                    <div class="foot_img">
-                        <img src="images/doftourisoum.png" alt="">
-                    </div>
+                <h4>Featured Packages</h4>
+                <div class="footer_featured_packages">
+                    <a href="">
+                        <p>Shey Phokshundo</p>
+                    </a>
+                    <a href="">
+                        <p>Mustang</p>
+                    </a>
+                    <a href="">
+                        <p>Annapurna Base Camp</p>
+                    </a>
                 </div>
+
+
 
             </div>
         </div>
@@ -696,36 +695,13 @@
                 <img src="images/mountain foot.png" alt="">
             </div>
             <div class="copyright">
-                <p>© 2022 Tiger Encounter All Rights Reserved. No part of this site may be reproduced without our
-                    written
-                    permission.</p>
+                <p>© 2022 Must Visit Nepal All Rights Reserved.</p>
             </div>
         </div>
 
 
 
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
@@ -736,108 +712,10 @@
     <!-- Owl Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- Custom Javascript -->
-    <script>
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
-                items: 1,
-                loop: true,
-                nav: true,
-                dots: true,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                smartSpeed: 1500,
-                autoplayHoverPause: true
-            });
-        });
 
 
+    <script src="js/script.js"></script>
 
-        window.addEventListener("scroll", function () {
-            let header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 160)
-        })
-
-        // for self typing 
-
-        let typed = new Typed(".auto_type", {
-            strings: ["Travel", "Trek", "Explore", "Hike", "Eat", ""],
-            typeSpeed: 150,
-            backSpeed: 150,
-            loop: true
-        })
-
-        // menu on mobile
-
-        const menuBtn = document.querySelector(".menu_icon span");
-        const cancelBtn = document.querySelector(".cancel_icon");
-        const items = document.querySelector(".nav_items");
-        menuBtn.onclick = () => {
-            items.classList.add("active");
-            menuBtn.classList.add("hide");
-            cancelBtn.classList.add("show");
-        }
-        cancelBtn.onclick = () => {
-            items.classList.remove("active");
-            menuBtn.classList.remove("hide");
-            cancelBtn.classList.remove("show");
-        }
-
-        // testmonial slider
-
-        //   all ------------------
-        function initParadoxWay() {
-            "use strict";
-
-            if ($(".testimonials-carousel").length > 0) {
-                var j2 = new Swiper(".testimonials-carousel .swiper-container", {
-                    preloadImages: false,
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                    loop: true,
-                    grabCursor: true,
-                    mousewheel: false,
-                    centeredSlides: true,
-                    pagination: {
-                        el: '.tc-pagination',
-                        clickable: true,
-                        dynamicBullets: true,
-                    },
-                    navigation: {
-                        nextEl: '.listing-carousel-button-next',
-                        prevEl: '.listing-carousel-button-prev',
-                    },
-                    breakpoints: {
-                        1024: {
-                            slidesPerView: 3,
-                        },
-
-                    }
-                });
-            }
-
-            // bubbles -----------------
-
-
-            // setInterval(function () {
-
-            //     var size = randomValue(sArray);
-            //     $('.bubbles').append('<div class="individual-bubble" style="left: ' + randomValue(bArray) + 'px; width: ' + size + 'px; height:' + size + 'px;"></div>');
-            //     $('.individual-bubble').animate({
-            //         'bottom': '100%',
-            //         'opacity': '-=0.7'
-            //     }, 4000, function () {
-            //         $(this).remove()
-            //     });
-            // }, 350);
-
-        }
-
-        //   Init All ------------------
-        $(document).ready(function () {
-            initParadoxWay();
-        });
-
-    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
