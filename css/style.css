@@ -397,11 +397,12 @@ header {
 }
 
 .packages_content p {
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: .5px;
-    font-size: 18px;
-    color: rgb(74, 74, 74);
     margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(39, 39, 39);
+    font-size: 18px;
+    letter-spacing: .8px;
+    word-spacing: .2px;
 
 }
 
@@ -717,8 +718,9 @@ header {
 /* testemonials section  */
 
 #testemonials {
-
-    margin-top: 100px;
+    background-color: rgb(235, 233, 233);
+    padding: 10px 0;
+    margin-top: 20px;
 }
 
 .testimonials-carousel-wrap {
@@ -863,10 +865,13 @@ header {
 .testimonials-text p {
     color: #131313;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
     line-height: 24px;
     padding-bottom: 10px;
-    font-weight: 500;
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    letter-spacing: .8px;
+    word-spacing: .2px;
 }
 
 .text-link {
@@ -1280,6 +1285,7 @@ footer {
         transition: ease 0.5s;
     }
 
+
     .sticky .nav_container .nav_items a {
         color: white;
     }
@@ -1574,6 +1580,11 @@ footer {
     padding: 20px;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
+    color: rgb(39, 39, 39);
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: .2px;
 }
 
 .overview_image {
@@ -1660,6 +1671,10 @@ footer {
 .high p {
     font-family: 'Poppins', sans-serif;
     color: rgb(39, 39, 39);
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: .2px;
 }
 
 
@@ -1836,6 +1851,9 @@ footer {
     padding: 10px;
     margin: 20px;
     margin-top: 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: .2px;
 
 }
 
@@ -1869,6 +1887,9 @@ footer {
 .costdetails_box p {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: .2px;
 }
 
 .cross {
@@ -2263,10 +2284,13 @@ footer {
 }
 
 .faq_panel p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
     padding: 10px;
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(39, 39, 39);
+    font-size: 18px;
+    letter-spacing: .8px;
+    word-spacing: .2px;
 }
 
 .active .faq_icon {
@@ -2392,20 +2416,15 @@ footer {
         padding: 40px 0;
     }
 
-    .title_3 {
-        width: 100%;
-        padding: 10px;
-    }
-
     .title_3 h2 {
         font-size: 30px;
         width: 100%;
-        padding-right: 15px;
+        /* padding-right: 15px; */
     }
 
     .title_3 h2::after {
         width: 60%;
-        right: 15px;
+        /* right: 15px; */
     }
 
     #about_page .title_3 h2 {
@@ -2470,6 +2489,7 @@ footer {
 .blog_details_img {
     width: 100%;
     height: 400px;
+    margin: 20px 0;
 }
 
 .blog_details_img img {
@@ -2488,10 +2508,33 @@ footer {
 .blog_details_box p {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    padding: 10px 0;
+    font-size: 19px;
+    padding: 20px 0;
+    padding-bottom: 10px;
     color: rgb(65, 65, 65);
+    letter-spacing: 1px;
+    word-spacing: .5px;
 }
+
+.quote {
+    background-color: rgb(191, 191, 191);
+    padding: 20px;
+    position: relative;
+}
+
+.quote .fas {
+    color: gray;
+    font-size: 30px;
+}
+
+.quote p {
+    padding: 10px 0;
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
 
 .other_topics a {
     text-decoration: none;
@@ -2592,35 +2635,32 @@ footer {
     background-attachment: fixed;
 }
 
-.about_page {
-    /* min-height: 100vh; */
-}
-
 .about_page_container {
     width: 100%;
     margin: 40px auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+    justify-content: center;
 }
 
 #about_page {
-    margin: 80px;
+    margin: 40px;
 }
 
 .about_page_img {
-    width: 100%;
+    width: 55%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .about_img_box {
     width: 48%;
-    max-height: 500px;
-    padding: 20px;
+    height: 48%;
+    /* max-height: 500px; */
+    padding: 10px;
     max-height: 500px;
     position: relative;
+    /* box-shadow: 0 0 4px gray; */
 }
 
 .about_img_box img {
@@ -2634,7 +2674,7 @@ footer {
 
 .about_page_text {
     z-index: 10;
-    width: 93%;
+    width: 45%;
     padding: 10px 20px;
     box-shadow: 1px 10px 10px rgba(103, 103, 103, 0.464);
 }
@@ -2661,15 +2701,36 @@ footer {
 }
 
 .about_page_text p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 19px;
-    color: rgb(66, 66, 66);
     margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(39, 39, 39);
+    font-size: 18px;
+    letter-spacing: .8px;
+    word-spacing: .2px;
 }
 
 .about_title {
     background: none;
     padding: 0;
+}
+
+@media screen and (max-width:1100px) {
+    .about_page_container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about_page_img {
+        width: 100%;
+    }
+
+    .about_img_box {
+        height: 400px;
+    }
+
+    .about_page_text {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:899px) {
@@ -2683,15 +2744,23 @@ footer {
         margin: 15px 10px;
     }
 
+    .about_page_text {
+        width: 100%;
+        margin: 0;
+    }
+
     .about_page_text h3 {
         font-size: 35px;
     }
 
-    .about_img_box {
-        max-height: 300px;
-        padding: 2px;
+    .about_page_img {
+        width: 100%;
     }
 
+    .about_img_box {
+        padding: 2px;
+        height: 200px;
+    }
 }
 
 /* contact css  */
