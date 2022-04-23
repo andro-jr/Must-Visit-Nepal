@@ -660,7 +660,6 @@ header {
 .btn_3 {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
 }
 
 .btn_3 a {
@@ -718,7 +717,7 @@ header {
 /* testemonials section  */
 
 #testemonials {
-    background-color: rgb(235, 233, 233);
+    background-color: rgb(246, 246, 246);
     padding: 10px 0;
     margin-top: 20px;
 }
